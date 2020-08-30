@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css" />
+    <link rel="shortcut icon" href="img/he4rt-icon.png" type="image/x-icon">
   </head>
+
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
+    <header id="header">
+      <div id="logo">
+        <img src="./img/logo-he4rt2.png" alt="">
+      </div>
+    </header>
+    <main id="main">
+      <section id="section-about">
+        <h1 class="title">Calculadora de Freela</h1>
+        <h2 class="subtitle">Uma calculadora que irá te mostrar o valor da sua hora perante o freelance cotado.</h2>
+        <div id="calculator-image">
+          <img src="./img/calculator.png" alt="">
+        </div>
+
+      </section>
+      <section id="section-form">
+        <form id="calculator-form">
+          <div class="card">
+            <label for="tempo-diario">Tempo diário investido</label>
+            <input type="number" name="tempo-diario" id="tempo-diario" min="0" max="24" required>
+          </div>
+          <div class="card">
+            <label for="dias-efetivos">Dias efetivos trabalhando</label>
+            <input type="number" name="dias-efetivos" id="dias-efetivos" min="0" required>
+          </div>
+          <div class="card">
+            <label for="dias-ferias">Dias de férias</label>
+            <input type="number" name="dias-ferias" id="dias-ferias" min="0" required>
+          </div>
+          <div class="card">
+            <label for="valor-total">Valor total do projeto</label>
+            <input type="number" name="valor-total" id="valor-total" min="0" required>
+          </div>
+        </form>
+        <button id="button">Calcular</button>
+        <div id="valor-hora">
+          <h4></h4>
+          <div id="valor">
+            <p></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <a href="https://github.com/GraziM" id="github" target="_blank">
+        <img src="./img/github.png" alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/grazi-alves/" id="linkedin" target="_blank">
+        <img src="./img/linkedin.png" alt="">
+      </a>
+    </footer>
     <script src="./main.js"></script>
   </body>
+
 </html>
