@@ -141,6 +141,7 @@ html{
     grid-area: value;
     justify-self: center;
     font-size: 30px;
+    display: none;
 }
 
 #valor-hora h4{
